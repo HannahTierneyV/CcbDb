@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[Entities]
+(
+	[Id]			INT				IDENTITY (1, 1) NOT NULL,
+	[NameType]		INT				NOT NULL,
+	[FirstName]		VARCHAR(MAX)	NOT NULL,
+	[MiddleName]	VARCHAR(MAX)	NULL,
+	[LastName]		VARCHAR(MAX)	NOT NULL,
+	[Address]		VARCHAR(MAX)	NOT NULL,
+	[City]			VARCHAR(MAX)	NOT NULL,
+	[State]			VARCHAR(MAX)	NOT NULL,
+	[ZipCode]		VARCHAR(MAX)	NOT NULL,
+	CONSTRAINT [PK_Entities] PRIMARY KEY CLUSTERED ([Id])
+)

@@ -1,0 +1,6 @@
+C:\htv\CcbDb\CcbDb\bin\Debug\CcbDb.dacpac
+C:\htv\CcbDb\CcbDb\bin\Debug\CcbDb.dll
+C:\htv\CcbDb\CcbDb\bin\Debug\CcbDb.pdb
+C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.sqlprojAssemblyReference.cache
+C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.dll
+C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.pdb
