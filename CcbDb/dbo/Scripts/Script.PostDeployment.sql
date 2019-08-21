@@ -12,3 +12,4 @@ Post-Deployment Script Template
 :r TestData/AddEntityTestData.sql
 :r TestData/AddLicenseTestData.sql
 :r TestData/AddEntityLicenseTestData.sql
+:r TestData/AddApplicationsTestData.sql
