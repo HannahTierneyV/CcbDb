@@ -1,7 +1,6 @@
 C:\htv\CcbDb\CcbDb\bin\Debug\CcbDb.dacpac
 C:\htv\CcbDb\CcbDb\bin\Debug\CcbDb.dll
 C:\htv\CcbDb\CcbDb\bin\Debug\CcbDb.pdb
-C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.sqlprojAssemblyReference.cache
 C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.dll
 C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.pdb
 C:\Users\bensonre\Desktop\CcbDb\CcbDb\obj\Debug\CcbDb.dll
@@ -13,3 +12,7 @@ C:\Users\bensonre\Desktop\CcbDb\CcbDb\obj\Debug\Model.xml
 C:\Users\bensonre\Desktop\CcbDb\CcbDb\obj\Debug\refactor.xml
 C:\Users\bensonre\Desktop\CcbDb\CcbDb\obj\Debug\postdeploy.sql
 C:\Users\bensonre\Desktop\CcbDb\CcbDb\obj\Debug\predeploy.sql
+C:\htv\CcbDb\CcbDb\obj\Debug\Model.xml
+C:\htv\CcbDb\CcbDb\obj\Debug\refactor.xml
+C:\htv\CcbDb\CcbDb\obj\Debug\postdeploy.sql
+C:\htv\CcbDb\CcbDb\obj\Debug\predeploy.sql

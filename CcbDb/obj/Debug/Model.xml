@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="CcbDb.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\BENSONRE\DESKTOP\CCBDB\CCBDB\OBJ\DEBUG\CCBDB.DLL" />
+			<Metadata Name="FileName" Value="C:\HTV\CCBDB\CCBDB\OBJ\DEBUG\CCBDB.DLL" />
 			<Metadata Name="AssemblyName" Value="CcbDb" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\bensonre\Desktop\CcbDb\CcbDb\obj\Debug\CcbDb.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\htv\CcbDb\CcbDb\obj\Debug\CcbDb.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
