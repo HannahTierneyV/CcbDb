@@ -1,13 +1,13 @@
-﻿IF NOT  EXISTS (SELECT * FROM [Applications] WHERE ApplicationId IN (1,2,3) )
+﻿IF NOT  EXISTS (SELECT * FROM [dbo].[Applications] WHERE [APPLICATION_ID] IN (1,2,3) )
 BEGIN
-	SET IDENTITY_INSERT [Applications] ON;
-	Insert into [Applications] (
-	[ApplicationId],
-	[UserId],
-	[ApplicationState],
-	[ApplicationType],
-	[CcbNumber],
-	[ExpirationDate])
+	SET IDENTITY_INSERT [dbo].[Applications] ON;
+	INSERT INTO [dbo].[Applications] (
+		[APPLICATION_ID],
+		[USER_ID],
+		[APPLICATION_STATE],
+		[APPLICATION_TYPE],
+		[REGISTRATION_NUMBER],
+		[EXPIRATION_DATE])
 	VALUES (
 		1,
 		1,
@@ -78,5 +78,5 @@ BEGIN
 		2,
 		'258963',
 		'2030-06-20T09:54:23');
-	SET IDENTITY_INSERT [Applications] OFF;
+	SET IDENTITY_INSERT [dbo].[Applications] OFF;
 END

@@ -47,7 +47,7 @@
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[ApplicationId]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[APPLICATION_ID]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -64,7 +64,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[UserId]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[USER_ID]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -80,7 +80,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[ApplicationState]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[APPLICATION_STATE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -96,7 +96,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[ApplicationType]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[APPLICATION_TYPE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -112,7 +112,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[CcbNumber]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[REGISTRATION_NUMBER]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -129,7 +129,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[ExpirationDate]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Applications].[EXPIRATION_DATE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -156,7 +156,7 @@
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[ApplicationId]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[APPLICATION_ID]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -173,7 +173,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[CcbNumber]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[REGISTRATION_NUMBER]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -189,7 +189,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[BusinessName]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[NAME]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -206,61 +206,15 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[LicenseType]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[SSN]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
+									<Property Name="IsMax" Value="True" />
 									<Relationship Name="Type">
 										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[LicenseStatus]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[LicenseExpirationDate]">
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[datetime]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[CcbLicenses].[Ssn]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
 										</Entry>
 									</Relationship>
 								</Element>
@@ -281,7 +235,7 @@
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[Id]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[ID]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -298,23 +252,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[NameType]">
-						<Property Name="IsNullable" Value="False" />
-						<Relationship Name="TypeSpecifier">
-							<Entry>
-								<Element Type="SqlTypeSpecifier">
-									<Relationship Name="Type">
-										<Entry>
-											<References ExternalSource="BuiltIns" Name="[int]" />
-										</Entry>
-									</Relationship>
-								</Element>
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[FirstName]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[FIRST_NAME]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -331,7 +269,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[MiddleName]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[MIDDLE_NAME]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -347,7 +285,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[LastName]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[LAST_NAME]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -364,7 +302,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[Address]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[ADDRESS]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -381,7 +319,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[City]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[CITY]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -398,7 +336,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[State]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[STATE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -415,7 +353,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[ZipCode]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Entities].[ZIP_CODE]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -443,7 +381,7 @@
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[EntityLicenses].[UserId]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[EntityLicenses].[USER_ID]">
 						<Property Name="IsNullable" Value="False" />
 						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
@@ -460,7 +398,7 @@
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[EntityLicenses].[CcbLicenseNumber]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[EntityLicenses].[REGISTRATION_NUMBER]">
 						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
@@ -487,7 +425,7 @@
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_EntityLicenses_Entities]">
 			<Relationship Name="Columns">
 				<Entry>
-					<References Name="[dbo].[EntityLicenses].[UserId]" />
+					<References Name="[dbo].[EntityLicenses].[USER_ID]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="DefiningTable">
@@ -497,7 +435,7 @@
 			</Relationship>
 			<Relationship Name="ForeignColumns">
 				<Entry>
-					<References Name="[dbo].[Entities].[Id]" />
+					<References Name="[dbo].[Entities].[ID]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="ForeignTable">
@@ -513,7 +451,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Applications].[ApplicationId]" />
+								<References Name="[dbo].[Applications].[APPLICATION_ID]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -532,7 +470,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[CcbLicenses].[ApplicationId]" />
+								<References Name="[dbo].[CcbLicenses].[APPLICATION_ID]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -551,7 +489,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[Entities].[Id]" />
+								<References Name="[dbo].[Entities].[ID]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -570,7 +508,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[EntityLicenses].[UserId]" />
+								<References Name="[dbo].[EntityLicenses].[USER_ID]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -579,7 +517,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[EntityLicenses].[CcbLicenseNumber]" />
+								<References Name="[dbo].[EntityLicenses].[REGISTRATION_NUMBER]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -598,7 +536,7 @@
 					<Element Type="SqlIndexedColumnSpecification">
 						<Relationship Name="Column">
 							<Entry>
-								<References Name="[dbo].[CcbLicenses].[CcbNumber]" />
+								<References Name="[dbo].[CcbLicenses].[REGISTRATION_NUMBER]" />
 							</Entry>
 						</Relationship>
 					</Element>
@@ -610,6 +548,74 @@
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="5" />
+		</Element>
+		<Element Type="SqlSchema" Name="[REGIS]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlView" Name="[REGIS].[V_ML_AUTHORIZED_SIGNUP]">
+			<Property Name="QueryScript">
+				<Value><![CDATA[ SELECT [NAME], [REGISTRATION_NUMBER], [SSN] FROM [dbo].[CcbLicenses]]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[REGIS].[V_ML_AUTHORIZED_SIGNUP].[NAME]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[CcbLicenses].[NAME]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[REGIS].[V_ML_AUTHORIZED_SIGNUP].[REGISTRATION_NUMBER]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[CcbLicenses].[REGISTRATION_NUMBER]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[REGIS].[V_ML_AUTHORIZED_SIGNUP].[SSN]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[CcbLicenses].[SSN]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="QueryDependencies">
+				<Entry>
+					<References Name="[dbo].[CcbLicenses]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CcbLicenses].[NAME]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CcbLicenses].[REGISTRATION_NUMBER]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[CcbLicenses].[SSN]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[REGIS]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="119" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE VIEW [REGIS].[V_ML_AUTHORIZED_SIGNUP]&#xD;&#xA;&#x9;AS" />
+				<Property Name="FooterContents" Value=";" />
+			</Annotation>
 		</Element>
 	</Model>
 </DataSchemaModel>

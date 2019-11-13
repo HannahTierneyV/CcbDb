@@ -60,24 +60,28 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
-    <Folder Include="dbo\Scripts" />
-    <Folder Include="dbo\StoredProcedures" />
-    <Folder Include="dbo\Scripts\TestData" />
+    <Folder Include="REGIS" />
+    <Folder Include="REGIS\Views" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\TestData" />
+    <Folder Include="Security" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\CcbLicenses.sql" />
     <Build Include="dbo\Tables\Entities.sql" />
     <Build Include="dbo\Tables\EntityLicenses.sql" />
-    <None Include="dbo\Scripts\TestData\AddEntityTestData.sql" />
-    <None Include="dbo\Scripts\TestData\AddEntityLicenseTestData.sql" />
-    <None Include="dbo\Scripts\TestData\AddLicenseTestData.sql" />
     <Build Include="dbo\Tables\Applications.sql" />
+    <Build Include="REGIS\Views\V_ML_AUTHORIZED_SIGNUP.sql" />
+    <None Include="Scripts\TestData\AddApplicationTestData.sql" />
+    <None Include="Scripts\TestData\AddEntityLicenseTestData.sql" />
+    <None Include="Scripts\TestData\AddEntityTestData.sql" />
+    <None Include="Scripts\TestData\AddCcbLicenseTestData.sql" />
+    <Build Include="Security\REGIS.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CcbDb.publish.xml" />
-    <None Include="dbo\Scripts\TestData\AddApplicationsTestData.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="dbo\Scripts\Script.PostDeployment.sql" />
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
